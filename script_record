@@ -1,0 +1,10 @@
+# state updats
+sinfo -N | awk 'NR > 1 { print $4 }'
+paste - -s
+
+# job complete notify
+nc -lk4t <port>
+printf "Job %s complete\n" "$BATCH_JOBID" | nc -t -w1 ubuntu_ctl0 <port>
+! done
+
+# generate slurm satch
