@@ -1,0 +1,1 @@
+slurm will allocate compute resource according to the command user defined first, then run the batch script with the corresponding resource defined in batch script with #SBATCH
